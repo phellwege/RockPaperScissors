@@ -48,22 +48,22 @@ h1 {
     background-color:white;
     border-radius: 50%;
     padding: 2.5%;
-    box-shadow: 0 -5px 5px  hsl(217, 16%, 45%);
+    box-shadow: 0 5px 5px  hsl(217, 16%, 45%);
 }
 #rock {
-    border-image: linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    border-image: linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%) 20);
     border-width: 20px;
     border-style: solid;
     border-radius: 50%;
 }
 #scissor {
-    border-image: linear-gradient(hsl(39, 89%, 49%),hsl(40, 84%, 53%));
+    border-image: linear-gradient(hsl(39, 89%, 49%),hsl(40, 84%, 53%) 20);
     border-width: 20px;
     border-style: solid;
     border-radius: 50%;
 }
 #paper {
-    border-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    border-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%) 20);
     border-width: 20px;
     border-style: solid;
     border-radius: 50%;
