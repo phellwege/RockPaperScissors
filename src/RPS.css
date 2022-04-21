@@ -44,20 +44,28 @@ h1 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     margin-left: 88%;
 }
-#hand {
+.hand {
     background-color:white;
     border-radius: 50%;
     padding: 2.5%;
     box-shadow: 0 -5px 5px  hsl(217, 16%, 45%);
 }
-#hand #rock {
-    border-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+#rock {
+    border-image: linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 50%;
 }
-#hand #scissor {
+#scissor {
     border-image: linear-gradient(hsl(39, 89%, 49%),hsl(40, 84%, 53%));
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 50%;
 }
-#hand #paper {
+#paper {
     border-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
-
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 50%;
 }
 
