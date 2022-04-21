@@ -6,7 +6,7 @@ import '../RPS.css'
 export default () => {
     return (
         <>
-            <div id='wrapper'>
+            <div class='wrapper'>
                 <div id='topDiv'>
                     <div>
                         <h1>
@@ -22,6 +22,7 @@ export default () => {
             <div><RPSResult id='result'/></div>
             <div id='rulesButton'>Rules</div>
             </div>
+            
         </>
     )
 }

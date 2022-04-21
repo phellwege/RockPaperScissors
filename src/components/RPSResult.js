@@ -4,7 +4,7 @@ import '../RPS.css'
 export default () => {
     return (
         <>
-        <div id='resultsWrap'>
+        <div class='resultsWrap'>
             <div>You Picked</div>
             <div>
                 You 
