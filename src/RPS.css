@@ -48,7 +48,7 @@ h1 {
     background-color:white;
     border-radius: 50%;
     padding: 2.5%;
-    box-shadow: 0 -5px  hsl(217, 16%, 45%);
+    box-shadow: 0 -5px 5px  hsl(217, 16%, 45%);
 }
 #hand #rock {
     border-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
