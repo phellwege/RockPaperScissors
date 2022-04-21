@@ -17,11 +17,10 @@ export default () => {
                             Scissors
                         </h1>
                     </div>
-                    <div><RPSSelect id='select'/></div>
-                    <div><RPSResult id='result'/></div>
                 </div>
-            
-            <button>Rules</button>
+            <div><RPSSelect id='select'/></div>
+            <div><RPSResult id='result'/></div>
+            <div id='rulesButton'>Rules</div>
             </div>
         </>
     )

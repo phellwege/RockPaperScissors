@@ -4,7 +4,13 @@ import '../RPS.css'
 export default () => {
     return (
         <>
-                <button>Play Again</button>         
+        <div id='resultsWrap'>
+            <div>You Picked</div>
+            <div>
+                You 
+                <button>Play Again</button> </div>
+            <div>House Picked</div>
+        </div>                
         </>
     )
 }
