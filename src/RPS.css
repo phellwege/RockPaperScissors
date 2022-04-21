@@ -45,6 +45,8 @@ h1 {
     margin-left: 88%;
 }
 .hand {
+    display: flex;
+    justify-content: space-evenly;
     background-color:white;
     border-radius: 50%;
     padding: 2.5%;
