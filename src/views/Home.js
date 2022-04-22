@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, state } from 'react';
 import RPSSelect from '../components/RPSSelect';
 import RPSResult from '../components/RPSResult';
 import RPSLoad from '../components/RPSLoad';
 import Rules from '../components/Rules';
 import Logo from '../static/logo.svg';
+import Modal from '../components/Rules.js';
 import '../RPS.css'
 
 
@@ -23,14 +24,14 @@ export default () => {
                 </div>
                 <div>
                     <RPSSelect id='select'/>
-                    <div id='rulesButton' onClick={this}>Rules</div>
+                    <div id='rulesButton'>Rules</div>
                 </div>
                 <div>
                     <RPSLoad id='load'/>
-                    <div id='rulesButton' onClick={this}>Rules</div>
+                    <div id='rulesButton'>Rules</div>
                 </div>
-                <div
-                    ><RPSResult id='result'/>
+                <div>
+                    <RPSResult id='result'/>
                     <div id='rulesButton'>Rules</div>
                 </div>
             </div>
