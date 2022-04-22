@@ -24,15 +24,20 @@ h1 {
     color: hsl(228, 45%, 44%);
 }
 #topDiv {
-    border-top: 2px solid lightblue;
-    border-radius: 5%;
+    border: 2px solid lightblue;
+    border-radius: 1em;
     width:80%;
     display: flex;
-    justify-content: center space-around;
+    top: 0;
+    margin-left:10%;
+    justify-content: space-around;
 }
 .selectWrap {
     display: flex;
     justify-content: center;
+    background-image: url('./static/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .resultsWrap {
     display: flex;
@@ -51,28 +56,29 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     background-color:white;
-    padding: 4em;
+    padding: 3.5em;
     border-radius: 50%;
+    box-shadow: 0 -7.5px 9px  hsl(217, 16%, 45%);
 }
 #rock {
     background-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
     border-radius: 50%;
     padding: 2.5%;
     margin:10%;
-    box-shadow: 0 5px 5px  hsl(217, 16%, 45%);
+    box-shadow: 0 5px 5px rgb(41, 41, 41);
 }
 #scissor {
     background-image: linear-gradient(hsl(39, 89%, 49%),hsl(40, 84%, 53%));
     border-radius: 50%;
     padding: 2.5%;
     margin:10%;
-    box-shadow: 0 5px 5px  hsl(217, 16%, 45%);
+    box-shadow: 0 5px 5px rgb(41, 41, 41);
 }
 #paper {
     background-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
     border-radius: 50%;
     padding: 2.5%;
     margin:10%;
-    box-shadow: 0 5px 5px  hsl(217, 16%, 45%);
+    box-shadow: 0 5px 5px rgb(41, 41, 41);
 }
 

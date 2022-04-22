@@ -11,7 +11,7 @@ export default () => {
             <div id='paper'>
                 <img src={Paper}  class='hand'/>
             </div>
-                <div id='scissor'>
+            <div id='scissor'>
                 <img src={Scissors} class='hand'/>
             </div>
             <div id="rock">
