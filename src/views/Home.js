@@ -17,8 +17,8 @@ export default () => {
                         <img src={Logo}/>
                     </div>
                     <div id='scoreTracker'>
-                        <h2 id='scoreText'>Score</h2>
-                        <h1 id='darkText'>Showing Score</h1>
+                        <h3 id='scoreText'>Score</h3>
+                        <h2 id='darkText'>15</h2>
                     </div>
                 </div>
                 <div>
