@@ -26,15 +26,16 @@ h1 {
 #topDiv {
     border: 2px solid lightblue;
     border-radius: 1em;
-    width:50%;
+    width:60%;
     display: flex;
     margin-top: 2%;
-    margin-left:25%;
+    margin-left:20%;
     justify-content: space-around;
 }
 .selectWrap {
     display: flex;
     justify-content: center;
+    flex-wrap: flex;
     background-image: url('./static/bg-triangle.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -70,6 +71,8 @@ h1 {
     padding: 2.5%;
     margin:10%;
     box-shadow: 0 7.5px 5px hsl(217, 16%, 26%);
+    display: flex;
+
 }
 #rock:hover {
     cursor: pointer;
@@ -80,6 +83,7 @@ h1 {
     padding: 2.5%;
     margin:10%;
     box-shadow: 0 7.5px 5px hsl(217, 16%, 26%);
+    display: flex;
 }
 #scissor:hover {
     cursor: pointer;
@@ -90,6 +94,7 @@ h1 {
     padding: 2.5%;
     margin:10%;
     box-shadow: 0 7.5px 5px hsl(217, 16%, 26%);
+    display: flex;
 }
 #paper:hover {
     cursor: pointer;

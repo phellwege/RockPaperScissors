@@ -18,6 +18,7 @@ export default () => {
                     <img src={Scissors}/>
                 </div>
             </div>
+            
             <div id="rock">
                 <div class='hand'>
                     <img src={Rock} />
