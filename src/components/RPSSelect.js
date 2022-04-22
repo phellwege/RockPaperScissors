@@ -9,13 +9,19 @@ export default () => {
         <>
         <div class='selectWrap'>
             <div id='paper'>
-                <img src={Paper}  class='hand'/>
+                <div class='hand'>
+                    <img src={Paper} />
+                </div>
             </div>
             <div id='scissor'>
-                <img src={Scissors} class='hand'/>
+                <div class='hand'>
+                    <img src={Scissors}/>
+                </div>
             </div>
             <div id="rock">
-                <img src={Rock}  class='hand'/>
+                <div class='hand'>
+                    <img src={Rock} />
+                </div>
             </div>
         </div>
         </>
