@@ -26,7 +26,6 @@ export default () => {
             <div><RPSResult id='result'/></div>
             <div id='rulesButton'>Rules</div>
             </div>
-            
         </>
     )
 }

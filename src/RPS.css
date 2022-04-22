@@ -52,6 +52,10 @@ h1 {
     margin-left: 88%;
     margin-bottom: 1.5%;
 }
+#rulesButton:hover {
+    border: 3px solid lightblue;
+    cursor: pointer;
+}
 .hand {
     display: flex;
     justify-content: space-evenly;
@@ -67,6 +71,9 @@ h1 {
     margin:10%;
     box-shadow: 0 7.5px 5px hsl(217, 16%, 26%);
 }
+#rock:hover {
+    cursor: pointer;
+}
 #scissor {
     background-image: linear-gradient(hsl(39, 89%, 49%),hsl(40, 84%, 53%));
     border-radius: 50%;
@@ -74,12 +81,18 @@ h1 {
     margin:10%;
     box-shadow: 0 7.5px 5px hsl(217, 16%, 26%);
 }
+#scissor:hover {
+    cursor: pointer;
+}
 #paper {
     background-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
     border-radius: 50%;
     padding: 2.5%;
     margin:10%;
     box-shadow: 0 7.5px 5px hsl(217, 16%, 26%);
+}
+#paper:hover {
+    cursor: pointer;
 }
 #scoreTracker {
     background-color: lightgrey;
