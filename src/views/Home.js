@@ -17,6 +17,10 @@ export default () => {
                             Scissors
                         </h1>
                     </div>
+                    <div id='scoreTracker'>
+                        <h3>Score</h3>
+                        <h2>Showing Score</h2>
+                    </div>
                 </div>
             <div><RPSSelect id='select'/></div>
             <div><RPSResult id='result'/></div>

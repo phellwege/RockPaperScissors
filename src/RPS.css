@@ -26,10 +26,10 @@ h1 {
 #topDiv {
     border: 2px solid lightblue;
     border-radius: 1em;
-    width:80%;
+    width:50%;
     display: flex;
-    top: 0;
-    margin-left:10%;
+    margin-top: 2%;
+    margin-left:25%;
     justify-content: space-around;
 }
 .selectWrap {
@@ -81,4 +81,10 @@ h1 {
     margin:10%;
     box-shadow: 0 5px 5px rgb(41, 41, 41);
 }
-
+#scoreTracker {
+    background-color: lightgrey;
+    border: 1px solid lightblue;
+    padding: 10px;
+    margin: 2.5%;
+    border-radius: .5em;
+}
