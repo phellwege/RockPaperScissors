@@ -88,6 +88,7 @@ h2 {
 }
 #rock:hover {
     cursor: pointer;
+    box-shadow: 0 5px 15px whitesmoke;
 }
 #scissor {
     background-image: linear-gradient(hsl(39, 89%, 49%),hsl(40, 84%, 53%));
@@ -96,10 +97,10 @@ h2 {
     margin:5%;
     box-shadow: 0 7.5px 5px hsl(217, 16%, 26%);
     display: flex;
-
 }
 #scissor:hover {
     cursor: pointer;
+    box-shadow: 0 5px 15px whitesmoke;
 }
 #paper {
     background-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
@@ -111,6 +112,7 @@ h2 {
 }
 #paper:hover {
     cursor: pointer;
+    box-shadow: 0 5px 15px whitesmoke;
 }
 #scoreTracker {
     background-color: lightgrey;
@@ -127,4 +129,10 @@ h2 {
 }
 #winLoseDiv {
     width: 25%;
+}
+#playAgainButton {
+    width: 100%;
+    height: 35%;
+    border-radius: .5em;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }

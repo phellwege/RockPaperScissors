@@ -18,7 +18,7 @@ export default () => {
                     </div>
                     <div id='scoreTracker'>
                         <h2 id='scoreText'>Score</h2>
-                        <h1>Showing Score</h1>
+                        <h1 id='darkText'>Showing Score</h1>
                     </div>
                 </div>
                 <div>
