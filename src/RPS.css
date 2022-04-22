@@ -32,20 +32,28 @@ h1 {
     margin-left:20%;
     justify-content: space-around;
 }
+#topDiv div img {
+    margin-top: 25%;
+}
+.selectBkg {
+    background-image: url('./static/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 5%;
+}
 .selectWrap {
     display: flex;
     justify-content: center;
     flex-wrap: flex;
-    background-image: url('./static/bg-triangle.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 60%;
+    margin-left: 20%;
 }
 .resultsWrap {
     display: flex;
     justify-content: center;
 }
 #rulesButton {
-    width: 8%;
+    width: 7.5%;
     border: 1px solid lightblue;
     border-radius: .25em;
     color: white;
@@ -72,7 +80,6 @@ h1 {
     margin:10%;
     box-shadow: 0 7.5px 5px hsl(217, 16%, 26%);
     display: flex;
-
 }
 #rock:hover {
     cursor: pointer;
@@ -84,6 +91,7 @@ h1 {
     margin:10%;
     box-shadow: 0 7.5px 5px hsl(217, 16%, 26%);
     display: flex;
+
 }
 #scissor:hover {
     cursor: pointer;
@@ -95,6 +103,7 @@ h1 {
     margin:10%;
     box-shadow: 0 7.5px 5px hsl(217, 16%, 26%);
     display: flex;
+
 }
 #paper:hover {
     cursor: pointer;

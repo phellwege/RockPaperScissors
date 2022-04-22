@@ -1,6 +1,7 @@
 import React from 'react';
 import RPSSelect from '../components/RPSSelect';
 import RPSResult from '../components/RPSResult';
+import Logo from '../static/logo.svg';
 import '../RPS.css'
 
 export default () => {
@@ -9,13 +10,7 @@ export default () => {
             <div class='wrapper'>
                 <div id='topDiv'>
                     <div>
-                        <h1>
-                            Rock
-                            <br/>
-                            Paper
-                            <br/>
-                            Scissors
-                        </h1>
+                        <img src={Logo}/>
                     </div>
                     <div id='scoreTracker'>
                         <h3>Score</h3>

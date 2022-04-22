@@ -7,21 +7,22 @@ import Scissors from '../static/icon-scissors.svg'
 export default () => {
     return (
         <>
-        <div class='selectWrap'>
-            <div id='paper'>
-                <div class='hand'>
-                    <img src={Paper} />
+        <div class='selectBkg'>
+            <div class='selectWrap'>
+                <div id='paper'>
+                    <div class='hand'>
+                        <img src={Paper} />
+                    </div>
                 </div>
-            </div>
-            <div id='scissor'>
-                <div class='hand'>
-                    <img src={Scissors}/>
+                <div id='scissor'>
+                    <div class='hand'>
+                        <img src={Scissors}/>
+                    </div>
                 </div>
-            </div>
-            
-            <div id="rock">
-                <div class='hand'>
-                    <img src={Rock} />
+                <div id="rock">
+                    <div class='hand'>
+                        <img src={Rock} />
+                    </div>
                 </div>
             </div>
         </div>
