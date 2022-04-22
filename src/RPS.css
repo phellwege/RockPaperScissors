@@ -6,25 +6,20 @@
     display: flex;
     flex-direction: column;
 }
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
 #darkText {
     color: hsl(229, 25%, 31%);
 }
 #scoreText {
-    color: hsl(229, 64%, 46%)
-}
-h1 {
-    text-shadow: 0 3px 0 hsl(217, 16%, 45%);
-    color: white;
-}
-.attribution { 
-    font-size: 11px; 
-    text-align: center;
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(229, 64%, 46%);
 }
 #topDiv {
-    border: 2px solid lightblue;
+    border: 2px solid hsl(217, 16%, 45%);
     border-radius: 1em;
     width:60%;
     display: flex;
@@ -48,13 +43,23 @@ h1 {
     width: 50%;
     margin-left: 25%;
 }
+.LoadWrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: 25%;
+    justify-content: space-around;
+}
 .resultsWrap {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: 25%;
 }
 #rulesButton {
     width: 7.5%;
-    border: 1px solid lightblue;
+    border: 1px solid hsl(217, 16%, 45%);
     border-radius: .25em;
     color: white;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -62,7 +67,7 @@ h1 {
     margin-bottom: 1.5%;
 }
 #rulesButton:hover {
-    border: 3px solid lightblue;
+    border: 2px solid lightblue;
     cursor: pointer;
 }
 .hand {
@@ -103,7 +108,6 @@ h1 {
     margin:5%;
     box-shadow: 0 7.5px 5px hsl(217, 16%, 26%);
     display: flex;
-
 }
 #paper:hover {
     cursor: pointer;
@@ -114,4 +118,13 @@ h1 {
     padding: 10px;
     margin: 2.5%;
     border-radius: .5em;
+}
+.rulesBkg {
+    background-color: white;
+    background-image: url('./static/image-rules.svg');
+    display: flex;
+    justify-content: space-between;
+}
+#winLoseDiv {
+    width: 25%;
 }
