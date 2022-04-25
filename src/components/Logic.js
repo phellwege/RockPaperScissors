@@ -3,7 +3,7 @@ const Game = ({score, myChoice, setScore}) => {
     const [PlayerWin, setPlayerWin] = useState('');
 
     const newHousePick = () => {
-        const choices = ['rock', 'paper', 'scissors'];
+        const choices = ['rock', 'paper', 'scissor'];
         setHouse(choices[Math.floor(Math.random() * 3)]);
     }
     useEffect(() => {
