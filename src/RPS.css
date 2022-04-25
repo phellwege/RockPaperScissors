@@ -129,6 +129,7 @@ h2 {
     border-radius: 1em;
     background-repeat: no-repeat;
     background-position: center;
+    background-position-y: 75%;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -136,11 +137,16 @@ h2 {
     top: 35%;
     bottom: 0;
     right: 0;
-    height: 50%;
+    height: 62.5%;
     width: 30%;
 }
 .rulesBkg div {
-    padding: 3%;
+    padding: 5%;
+}
+.rulesBkg img:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 15px rgb(94, 94, 94);
+    border: 1px solid black;
 }
 
 #winLoseDiv {
