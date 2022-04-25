@@ -126,9 +126,23 @@ h2 {
 .rulesBkg {
     background-color: white;
     background-image: url('./static/image-rules.svg');
+    border-radius: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    left:34.5vw;
+    top: 35%;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 30%;
 }
+.rulesBkg div {
+    padding: 3%;
+}
+
 #winLoseDiv {
     width: 25%;
 }
@@ -138,11 +152,4 @@ h2 {
     border-radius: .5em;
     font-family: 'Barlow Semi Condensed', sans-serif;
     letter-spacing: .2rem;
-}
-
-.display-block {
-    display: block;
-}
-.display-none {
-    display: none;
 }

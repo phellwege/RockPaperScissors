@@ -2,14 +2,16 @@ import React, { useEffect, useState, state } from 'react';
 import RPSSelect from '../components/RPSSelect';
 import RPSResult from '../components/RPSResult';
 import RPSLoad from '../components/RPSLoad';
-import Rules from '../components/Rules';
 import Logo from '../static/logo.svg';
 import Modal from '../components/Rules.js';
 import '../RPS.css'
 
 
 export default () => {
-
+    const [show, setShow] = useState(false);
+    function onClose(e) {
+        setShow(false);
+    };
     return (
         <>
             <div class='wrapper'>
@@ -24,16 +26,19 @@ export default () => {
                 </div>
                 <div>
                     <RPSSelect id='select'/>
-                    <div id='rulesButton'>Rules</div>
+                    <Modal show={show} onClose={onClose} />
+                    <div id='rulesButton' onClick={e => {setShow(true)}}>Rules</div>
                 </div>
-                <div>
+                {/* <div>
                     <RPSLoad id='load'/>
-                    <div id='rulesButton'>Rules</div>
+                    <Modal show={show} onClose={onClose} />
+                    <div id='rulesButton' onClick={e => {setShow(true)}}>Rules</div>
                 </div>
                 <div>
                     <RPSResult id='result'/>
-                    <div id='rulesButton'>Rules</div>
-                </div>
+                    <Modal show={show} onClose={() => setShow(false)} />
+                    <div id='rulesButton' onClick={e => {setShow(true)}}>Rules</div>
+                </div> */}
             </div>
         </>
     )
