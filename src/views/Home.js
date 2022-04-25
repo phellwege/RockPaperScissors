@@ -1,7 +1,6 @@
 import React, { useEffect, useState, state } from 'react';
 import RPSSelect from '../components/RPSSelect';
 import RPSResult from '../components/RPSResult';
-import RPSLoad from '../components/RPSLoad';
 import Logo from '../static/logo.svg';
 import Modal from '../components/Rules.js';
 import '../RPS.css'
@@ -29,16 +28,11 @@ export default () => {
                     <Modal show={show} onClose={onClose} />
                     <div id='rulesButton' onClick={e => {setShow(true)}}>Rules</div>
                 </div>
-                {/* <div>
-                    <RPSLoad id='load'/>
-                    <Modal show={show} onClose={onClose} />
-                    <div id='rulesButton' onClick={e => {setShow(true)}}>Rules</div>
-                </div>
                 <div>
                     <RPSResult id='result'/>
                     <Modal show={show} onClose={() => setShow(false)} />
                     <div id='rulesButton' onClick={e => {setShow(true)}}>Rules</div>
-                </div> */}
+                </div>
             </div>
         </>
     )

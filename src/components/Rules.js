@@ -9,8 +9,12 @@ export default (props) => {
     }
         return (
             <div className='rulesBkg'>
-                    <div><h2 id='darkText'>Rules</h2></div>
-                    <div><img src={Close} onClick={props.onClose} /></div>
+                    <div>
+                        <h1 id='darkText'>Rules</h1>
+                    </div>
+                    <div>
+                        <img src={Close} onClick={props.onClose} />
+                    </div>
             </div>
         )
     }
