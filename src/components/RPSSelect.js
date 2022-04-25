@@ -8,15 +8,15 @@ import Scissors from '../static/icon-scissors.svg';
 export default () => {
 
     function Transitioning() {
-        const x = document.getElementById('select')
-        const y = document.getElementById('result')
+        const x = document.getElementsByClassName('select')[0];
+        const y = document.getElementsByClassName('result')[0];
         if(x.style.display === 'block') {
-            x.style = {display: 'none'};
-            y.style.display = 'block';
+            x.style.display= 'block';
+            y.style.display = 'none';
         }
         else {
-            y.style.display = 'none';
-            x.style.display = 'block';
+            y.style.display = 'block';
+            x.style.display = 'none';
         }
     }
     return (

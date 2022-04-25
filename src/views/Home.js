@@ -23,14 +23,16 @@ export default () => {
                         <h2 id='darkText'>15</h2>
                     </div>
                 </div>
-                <div>
-                    <RPSSelect id='select'/>
+                <div className='select'>
+                    <RPSSelect/>
                 </div>
-                <div>
-                    <RPSResult id='result'/>
+                <div className='result'>
+                    <RPSResult/>
                 </div>
                 <Modal show={show} onClose={onClose} />
-                <div id='rulesButton' onClick={e => {setShow(true)}}>Rules</div>
+                <div id='rulesButton' onClick={e => {setShow(true)}}>
+                    Rules
+                </div>
             </div>
         </>
     )

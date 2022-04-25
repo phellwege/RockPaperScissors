@@ -162,3 +162,9 @@ h2 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     letter-spacing: .2rem;
 }
+.select {
+    display: block;
+}
+.result {
+    display: none;
+}
