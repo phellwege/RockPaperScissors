@@ -6,8 +6,8 @@ import Scissors from '../static/icon-scissors.svg';
 
 
 export default () => {
-
-    function Transitioning() {
+    const [myChoice, setMyChoice] = useState('')
+    function Transitioning(e) {
         const x = document.getElementsByClassName('select')[0];
         const y = document.getElementsByClassName('result')[0];
         if(x.style.display === 'block') {
@@ -17,13 +17,15 @@ export default () => {
         else {
             y.style.display = 'block';
             x.style.display = 'none';
-        }
+        };
+        setMyChoice(e.target.dataset.id);
+        console.log(e)
     }
     return (
         <>
         <div className='selectBkg'>
             <div class='selectWrap'>
-                <div id='paper' onClick={Transitioning}>
+                <div id='paper' data-id='paper' onClick={Transitioning}>
                     <div class='hand'>
                         <img src={Paper} />
                     </div>
