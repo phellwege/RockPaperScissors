@@ -5,6 +5,7 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 h1 {
     color: white;
@@ -54,8 +55,8 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 70%;
-    margin-left: 15%;
+    width: 80%;
+    margin-left: 10%;
 }
 #rulesButton {
     width: 7.5%;
@@ -74,7 +75,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     background-color:white;
-    padding: 3.5em;
+    padding: 3.25em;
     border-radius: 50%;
     box-shadow: 0 7.5px 9px  hsl(217, 16%, 45%) inset;
 }
@@ -151,7 +152,6 @@ h2 {
     box-shadow: 0 1px 15px rgb(94, 94, 94);
     border: 1px solid black;
 }
-
 #winLoseDiv {
     width: 25%;
 }
@@ -161,6 +161,20 @@ h2 {
     border-radius: .5em;
     font-family: 'Barlow Semi Condensed', sans-serif;
     letter-spacing: .2rem;
+}
+.playersChoice {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pcChoice {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .select {
     display: block;
