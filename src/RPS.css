@@ -139,6 +139,7 @@ h2 {
     right: 0;
     height: 62.5%;
     width: 30%;
+    border: 2px solid black;
 }
 .rulesBkg div {
     padding: 5%;
