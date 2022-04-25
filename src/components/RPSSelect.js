@@ -5,10 +5,10 @@ import Paper from '../static/icon-paper.svg';
 import Scissors from '../static/icon-scissors.svg';
 
     function Transitioning() {
-        const x = document.getElementsByClassName('selectBkg')
-        const y = document.getElementsByClassName('resultsWrap')
+        const x = document.getElementById('select')
+        const y = document.getElementById('result')
         if(x.style.display === 'block') {
-            x.style.display = 'none';
+            x.style = {display: 'none'};
             y.style.display = 'block';
         }
         else {
@@ -16,6 +16,7 @@ import Scissors from '../static/icon-scissors.svg';
             x.style.display = 'block';
         }
     }
+
 export default () => {
 
     return (
@@ -27,12 +28,12 @@ export default () => {
                         <img src={Paper} />
                     </div>
                 </div>
-                <div id='scissor'>
+                <div id='scissor' onClick={Transitioning}>
                     <div class='hand'>
                         <img src={Scissors}/>
                     </div>
                 </div>
-                <div id="rock">
+                <div id="rock" onClick={Transitioning}>
                     <div class='hand'>
                         <img src={Rock} />
                     </div>
