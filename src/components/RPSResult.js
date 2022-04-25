@@ -1,9 +1,12 @@
-import React from 'react';
-import '../RPS.css'
-import Rock from '../static/icon-rock.svg'
-import Paper from '../static/icon-paper.svg'
-import Scissors from '../static/icon-scissors.svg'
+import React, { useEffect, useState, state } from 'react';
+import '../RPS.css';
+import Rock from '../static/icon-rock.svg';
+import Paper from '../static/icon-paper.svg';
+import Scissors from '../static/icon-scissors.svg';
+
+
 export default () => {
+
     return (
         <>
         <div className='resultsWrap'>

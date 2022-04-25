@@ -25,14 +25,12 @@ export default () => {
                 </div>
                 <div>
                     <RPSSelect id='select'/>
-                    <Modal show={show} onClose={onClose} />
-                    <div id='rulesButton' onClick={e => {setShow(true)}}>Rules</div>
                 </div>
                 <div>
                     <RPSResult id='result'/>
-                    <Modal show={show} onClose={() => setShow(false)} />
-                    <div id='rulesButton' onClick={e => {setShow(true)}}>Rules</div>
                 </div>
+                <Modal show={show} onClose={onClose} />
+                <div id='rulesButton' onClick={e => {setShow(true)}}>Rules</div>
             </div>
         </>
     )

@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState, state } from 'react';
 import '../RPS.css'
 import Rock from '../static/icon-rock.svg';
 import Paper from '../static/icon-paper.svg';
 import Scissors from '../static/icon-scissors.svg';
+
+
+export default () => {
 
     function Transitioning() {
         const x = document.getElementById('select')
@@ -16,9 +19,6 @@ import Scissors from '../static/icon-scissors.svg';
             x.style.display = 'block';
         }
     }
-
-export default () => {
-
     return (
         <>
         <div className='selectBkg'>
