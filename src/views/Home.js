@@ -11,6 +11,8 @@ export default () => {
     function onClose(e) {
         setShow(false);
     };
+    const [score, setScore] = useState(0);
+    const [myChoice, setMyChoice] = useState('')
     return (
         <>
             <div class='wrapper'>
@@ -20,14 +22,14 @@ export default () => {
                     </div>
                     <div id='scoreTracker'>
                         <h3 id='scoreText'>Score</h3>
-                        <h2 id='darkText'>15</h2>
+                        <h1 id='darkText'>{score}</h1>
                     </div>
                 </div>
                 <div className='select'>
-                    <RPSSelect/>
+                    <RPSSelect setMyChoice={setMyChoice}/>
                 </div>
                 <div className='result'>
-                    <RPSResult/>
+                    <RPSResult myChoice={myChoice} score={score} setScore={setScore}/>
                 </div>
                 <Modal show={show} onClose={onClose} />
                 <div id='rulesButton' onClick={e => {setShow(true)}}>
