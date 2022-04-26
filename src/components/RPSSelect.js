@@ -28,12 +28,12 @@ export default () => {
                         <img src={Paper} alt='paper icon'/>
                     </div>
                 </div>
-                <div id='scissor' onClick={Transitioning}>
+                <div id='scissor' data-id='scissor' onClick={Transitioning}>
                     <div class='hand'>
                         <img src={Scissors} alt='scissor icon'/>
                     </div>
                 </div>
-                <div id="rock" onClick={Transitioning}>
+                <div id="rock" data-id='rock' onClick={Transitioning}>
                     <div class='hand'>
                         <img src={Rock} alt='rock icon'/>
                     </div>

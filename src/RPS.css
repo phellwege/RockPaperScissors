@@ -58,6 +58,15 @@ h2 {
     width: 80%;
     margin-left: 10%;
 }
+.resultsWrap #rock {
+    padding: 5.5%;
+}
+.resultsWrap #paper {
+    padding: 5.5%;
+}
+.resultsWrap #scissor {
+    padding: 5.5%;
+}
 #rulesButton {
     width: 7.5%;
     border: 1px solid hsl(217, 16%, 45%);
