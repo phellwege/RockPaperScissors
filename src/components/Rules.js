@@ -13,7 +13,7 @@ export default (props) => {
                         <h1 id='darkText'>Rules</h1>
                     </div>
                     <div>
-                        <img src={Close} onClick={props.onClose} />
+                        <img src={Close} onClick={props.onClose} alt='' />
                     </div>
             </div>
         )

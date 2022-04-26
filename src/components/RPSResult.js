@@ -18,11 +18,13 @@ export default () => {
             x.style.display = 'block';
         }
     }
+
     return (
         <>
         <div className='resultsWrap'>
             <div className='playersChoice'>
                 <h2>You Picked</h2>
+                
                 <div id='paper'>
                     <div class='hand'>
                         <img src={Paper} />
@@ -41,11 +43,14 @@ export default () => {
             </div>
 
             <div id='winLoseDiv'>
-                <h1>You</h1> 
+                <h1>You 
+                
+                </h1> 
                 <br/>
                 <button id='playAgainButton' onClick={Transitioning}>Play Again</button> </div>
             <div className='pcChoice'>
                 <h2>House Picked</h2>
+                
                 <div id='paper'>
                     <div class='hand'>
                         <img src={Paper} />
