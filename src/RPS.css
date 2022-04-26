@@ -67,6 +67,18 @@ h2 {
 .resultsWrap #scissor {
     padding: 5.5%;
 }
+.resultsWrap #rock:hover {
+    cursor: default;
+    box-shadow: none;
+}
+.resultsWrap #paper:hover {
+    cursor: default;
+    box-shadow: none;
+}
+.resultsWrap #scissor:hover {
+    cursor: default;
+    box-shadow: none;
+}
 #rulesButton {
     width: 7.5%;
     border: 1px solid hsl(217, 16%, 45%);

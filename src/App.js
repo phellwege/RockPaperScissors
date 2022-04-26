@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { Router } from '@reach/router';
 import Home from './views/Home';
-
 import './App.css';
 
 
