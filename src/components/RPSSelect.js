@@ -7,7 +7,7 @@ import Game from '../views/Home'
 
 export default () => {
     
-    function Transitioning(e) {
+    function Transitioning() {
         const x = document.getElementsByClassName('select')[0];
         const y = document.getElementsByClassName('result')[0];
         if(x.style.display === 'block') {
@@ -23,19 +23,19 @@ export default () => {
     return (
         <>
         <div className='selectBkg'>
-            <div class='selectWrap'>
+            <div className='selectWrap'>
                 <div id='paper' data-id='paper' onClick={Transitioning}>
-                    <div class='hand'>
+                    <div className='hand'>
                         <img src={Paper} alt='paper icon'/>
                     </div>
                 </div>
                 <div id='scissor' data-id='scissor' onClick={Transitioning}>
-                    <div class='hand'>
+                    <div className='hand'>
                         <img src={Scissors} alt='scissor icon'/>
                     </div>
                 </div>
                 <div id="rock" data-id='rock' onClick={Transitioning}>
-                    <div class='hand'>
+                    <div className='hand'>
                         <img src={Rock} alt='rock icon'/>
                     </div>
                 </div>

@@ -1,25 +1,19 @@
 import React, { useEffect, useState, state } from 'react';
 import RPSSelect from '../components/RPSSelect';
 import RPSResult from '../components/RPSResult';
-import Logo from '../static/logo.svg';
-import Modal from '../components/Rules.js';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import '../RPS.css'
+import '../RPS.css';
 
 
-export default () => {
-    const [show, setShow] = useState(false);
-    function onClose(e) {
-        setShow(false);
-    };
+export default (context, props) => {
     const [score, setScore] = useState(0);
-    const [myChoice, setMyChoice] = useState('')
-
+    const [myChoice, setMyChoice] = useState('');
+    const [house, setHouse] = useState('');
+    const [PlayerWin, setPlayerWin] = useState('');
     const Game = ({score, myChoice, setScore}) => {
-        const [house, setHouse] = useState('');
-        const [PlayerWin, setPlayerWin] = useState('');
-    
+        
+        
         const newHousePick = () => {
             const choices = ['rock', 'paper', 'scissor'];
             setHouse(choices[Math.floor(Math.random() * 3)]);
@@ -61,15 +55,16 @@ export default () => {
             Result();
         }, [house]);
     }
+    
     return (
         <>
-            <div class='wrapper'>
-                <Header/>
+            <div className='wrapper'>
+                <Header score={score}/>
                 <div className='select'>
-                    <RPSSelect myChoice={myChoice} score={score} setScore={setScore} setMyChoice={setMyChoice}/>
+                    <RPSSelect/>
                 </div>
                 <div className='result'>
-                    <RPSResult myChoice={myChoice} score={score} setScore={setScore}/>
+                    <RPSResult/>
                 </div>
                 <Footer/>
             </div>

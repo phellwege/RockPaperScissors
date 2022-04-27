@@ -6,7 +6,6 @@ import Scissors from '../static/icon-scissors.svg';
 import house from '../views/Home'
 import myChoice from '../views/Home'
 import PlayerWin from '../views/Home'
-import Game from '../views/Home'
 
 export default () => {
     function Transitioning() {
@@ -30,7 +29,6 @@ export default () => {
                 <h2>You Picked</h2>
                 {myChoice}
             </div>
-
             <div id='winLoseDiv'>
                 <h1>
                 {PlayerWin=='Win' && <h2>You Win</h2>}

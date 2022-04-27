@@ -2,6 +2,7 @@ import React, { useEffect, useState, state } from 'react';
 import '../RPS.css';
 import Logo from '../static/logo.svg';
 
+
 export default () => {
     const [score, setScore] = useState(0);
     return(
