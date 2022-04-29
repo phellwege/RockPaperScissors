@@ -18,7 +18,8 @@ export default (props) => {
             y.style.display = 'block';
             x.style.display = 'none';
         }
-    };
+    }
+
     return (
         <>
         <div className='selectBkg'>
