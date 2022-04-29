@@ -19,7 +19,7 @@ export default (props) => {
             x.style.display = 'none';
         }
     }
-
+// this doesnt work
     return (
         <>
         <div className='selectBkg'>
