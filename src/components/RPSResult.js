@@ -27,7 +27,7 @@ export default (props) => {
                 <h2>You Picked</h2>
                 <div id={props.myChoice} data-id={props.myChoice}>
                     <div className='hand'>
-                        <img src={props.myChoice} alt={props.myChoice}/>
+                        <img src={props.myChoice === 'rock' ? rock :props.myChoice === 'scissor' ? scissor : props.myChoice === 'paper' ? paper : rock} alt={props.myChoice}/>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ export default (props) => {
                 <h2>The House Picked</h2>
                 <div id={props.house} data-id={props.house}>
                     <div className='hand'>
-                        <img src={props.house} alt={props.house}/>
+                        <img src={props.house === 'rock' ? rock :props.house === 'scissor' ? scissor : props.house === 'paper' ? paper : rock} alt={props.house}/>
                     </div>
                 </div>
             </div>

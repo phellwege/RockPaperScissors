@@ -9,39 +9,43 @@ import '../RPS.css';
 export default () => {
     const newHousePick = () => {
             const choices = ['rock', 'paper', 'scissor'];
-            setHouse(choices[Math.floor(Math.random() * 3)]);
+            let choice =choices[Math.floor(Math.random() * 3)]
+            setHouse(choice);
+            return choice
         }
     const [score, setScore] = useState(0);
     const [myChoice, setMyChoice] = useState('');
     const [house, setHouse] = useState('');
     const [PlayerWin, setPlayerWin] = useState('');
-    
         const Result = () => {
-            newHousePick();
-            if(myChoice == house) {
+            if (myChoice === ''){
+            return
+        }
+            let cChoice = newHousePick();
+            if(myChoice === cChoice) {
                 setPlayerWin('Draw')
             }
-            else if(myChoice==='rock'){
-                if (house ==='scissor'){
+            else if (myChoice==='rock'){
+                if (cChoice ==='scissor'){
                 setPlayerWin('Win')
-                setScore(score + 1)}
-            else {
+                setScore(score + 1)
+            } else {
                 setPlayerWin('Lose')
-                setScore(score - 1)}
+                setScore(score - 1)
                 }
-            else if(myChoice==='paper'){
-                if (house ==='rock'){
+            } else if(myChoice==='paper'){
+                if (cChoice ==='rock'){
                 setPlayerWin('Win')
-                setScore(score + 1)}
-            else {
+                setScore(score + 1)
+            } else {
                 setPlayerWin('Lose')
                 setScore(score - 1)}
                 }
             else if(myChoice==='scissor'){
-                if (house ==='paper'){
+                if (cChoice ==='paper'){
                 setPlayerWin('Win')
-                setScore(score + 1)}
-            else {
+                setScore(score + 1)
+            } else {
                 setPlayerWin('Lose')
                 setScore(score - 1)}
                 }
