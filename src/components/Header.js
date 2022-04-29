@@ -3,8 +3,10 @@ import '../RPS.css';
 import Logo from '../static/logo.svg';
 
 
-export default () => {
-    const [score, setScore] = useState(0);
+
+export default (props) => {
+    
+
     return(
         <>
                 <div id='topDiv'>
@@ -13,9 +15,9 @@ export default () => {
                     </div>
                     <div id='scoreTracker'>
                         <h3 id='scoreText'>Score</h3>
-                        <h1 id='darkText'>{score}</h1>
+                        <h1 id='darkText'>{props.score}</h1>
                     </div>
                 </div>
         </>
     )
-}
+}   
