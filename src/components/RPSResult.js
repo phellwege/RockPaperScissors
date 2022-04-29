@@ -35,7 +35,7 @@ export default (props) => {
                 <h1>
                 {props.PlayerWin=='Win' && <h2>You Win</h2>}
                 {props.PlayerWin=='Lose' && <h2>You lose</h2>}
-                {props.PlayerWin=='Draw' && <h2> Draw</h2>}
+                {props.PlayerWin=='Draw' && <h2>Draw</h2>}
                 </h1> 
                 <br/>
                 <button id='playAgainButton' onClick={Transitioning}>Play Again</button> </div>

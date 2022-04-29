@@ -15,40 +15,40 @@ export default () => {
     const [myChoice, setMyChoice] = useState('');
     const [house, setHouse] = useState('');
     const [PlayerWin, setPlayerWin] = useState('');
-    useEffect(() => {
-        Result();
-        }, [house]);
+    
         const Result = () => {
             newHousePick();
-            if(myChoice==='rock' & house==='scissor'){
-                setPlayerWin('Win')
-                setScore(score + 1);
-            }
-            else if(myChoice==='paper' & house==='rock'){
-                setPlayerWin('Win')
-                setScore(score + 1);
-            }
-            else if(myChoice==='scissor' & house==='paper'){
-                setPlayerWin('Win')
-                setScore(score + 1);
-            }
-            else if(myChoice==='rock' & house==='paper'){
-                setPlayerWin('Lose')
-                setScore(score - 1);
-            }
-            else if(myChoice==='paper' & house==='scissor'){
-                setPlayerWin('Lose')
-                setScore(score - 1);
-            }
-            else if(myChoice==='scissor' & house==='rock'){
-                setPlayerWin('Lose')
-                setScore(score - 1);
-            }
-            else{
+            if(myChoice == house) {
                 setPlayerWin('Draw')
             }
+            else if(myChoice==='rock'){
+                if (house ==='scissor'){
+                setPlayerWin('Win')
+                setScore(score + 1)}
+            else {
+                setPlayerWin('Lose')
+                setScore(score - 1)}
+                }
+            else if(myChoice==='paper'){
+                if (house ==='rock'){
+                setPlayerWin('Win')
+                setScore(score + 1)}
+            else {
+                setPlayerWin('Lose')
+                setScore(score - 1)}
+                }
+            else if(myChoice==='scissor'){
+                if (house ==='paper'){
+                setPlayerWin('Win')
+                setScore(score + 1)}
+            else {
+                setPlayerWin('Lose')
+                setScore(score - 1)}
+                }
         }
-        
+        useEffect(() => {
+        Result();
+        }, [myChoice]);
     
     return (
         <>
