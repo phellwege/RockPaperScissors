@@ -15,7 +15,9 @@ export default () => {
     const [myChoice, setMyChoice] = useState('');
     const [house, setHouse] = useState('');
     const [PlayerWin, setPlayerWin] = useState('');
-
+    useEffect(() => {
+        Result();
+        }, [house]);
         const Result = () => {
             newHousePick();
             if(myChoice==='rock' & house==='scissor'){
@@ -46,9 +48,7 @@ export default () => {
                 setPlayerWin('Draw')
             }
         }
-        useEffect(() => {
-            Result();
-        }, [house]);
+        
     
     return (
         <>

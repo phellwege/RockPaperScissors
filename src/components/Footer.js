@@ -7,8 +7,7 @@ export default () => {
     function onClose(e) {
         setShow(false);
     };
-    const [score, setScore] = useState(0);
-    const [myChoice, setMyChoice] = useState('')
+    
     return(
         <>
             <Modal show={show} onClose={onClose} />
