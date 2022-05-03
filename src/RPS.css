@@ -7,7 +7,6 @@
     flex-direction: column;
     min-height: 100vh;
 }
-
 h1 {
     color: white;
 }
@@ -161,7 +160,6 @@ h2 {
 .rulesBkg div {
     padding: 5%;
 }
-
 .rulesBkg img:hover {
     cursor: pointer;
     box-shadow: 0 1px 15px rgb(94, 94, 94);
@@ -203,7 +201,6 @@ h2 {
 #mobileOnly {
     display: none;
 }
-
 @media only screen and (max-width: 400px) {
     .rulesBkg {
         background-color: white;
