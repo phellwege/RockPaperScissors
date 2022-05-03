@@ -75,7 +75,7 @@ export default (props) => {
                     <RPSSelect Transitioning={Transitioning} setMyChoice={setMyChoice} setPlayerWin={setPlayerWin}/>
                 </div>
                 <div className='result'>
-                    <RPSResult Transitioning={Transitioning} PlayerWin={PlayerWin} myChoice={myChoice} setScore={setScore} house={house}/>
+                    <RPSResult Transitioning={Transitioning} setMyChoice={setMyChoice} PlayerWin={PlayerWin} myChoice={myChoice} setScore={setScore} house={house}/>
                 </div>
                 <Footer/>
             </div>

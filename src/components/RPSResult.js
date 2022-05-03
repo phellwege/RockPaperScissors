@@ -22,7 +22,7 @@ export default (props) => {
                 {props.PlayerWin=='Lose' && <h1>You lose</h1>}
                 {props.PlayerWin=='Draw' && <h1>Draw</h1>}
                 <br/>
-                <button id='playAgainButton' onClick={(e)=> {props.Transitioning()}}>Play Again</button> </div>
+                <button id='playAgainButton' onClick={(e)=> {props.Transitioning(); props.setMyChoice('')}}>Play Again</button> </div>
             <div className='pcChoice'>
                 <h2>The House Picked</h2>
                 <div id={props.house} data-id={props.house}>
