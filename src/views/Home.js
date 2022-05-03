@@ -7,10 +7,10 @@ import '../RPS.css';
 
 
 export default (props) => {
-    const Transitioning = (e) => {
-        const x = document.getElementsByClassName('select')[0];
-        const y = document.getElementsByClassName('result')[0];
-        if(x.style.display === 'block') {
+    const Transitioning = () => {
+        const y = document.getElementsByClassName('select')[0];
+        const x = document.getElementsByClassName('result')[0];
+        if(x.style.display == 'block') {
             x.style.display = 'none';
             y.style.display = 'block';
         }
