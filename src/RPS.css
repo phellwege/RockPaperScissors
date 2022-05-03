@@ -245,4 +245,25 @@ h2 {
         flex-direction: row;
         justify-content: space-between;
     }
+    .resultsWrap #rock {
+        padding: 15%;
+    }
+    .resultsWrap #paper {
+        padding: 15%;
+    }
+    .resultsWrap #scissor {
+        padding: 15%;
+    }
+    #rock {
+        padding: 7.5%;
+    }
+    #paper {
+        padding: 7.5%;
+    }
+    #scissor {
+        padding: 7.5%;
+    }
+    .hand {
+        padding: 1.5em;
+    }
 }
