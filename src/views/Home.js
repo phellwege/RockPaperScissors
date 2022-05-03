@@ -6,7 +6,20 @@ import Footer from '../components/Footer';
 import '../RPS.css';
 
 
-export default () => {
+export default (props) => {
+    const Transitioning = (e) => {
+        const x = document.getElementsByClassName('select')[0];
+        const y = document.getElementsByClassName('result')[0];
+        if(x.style.display === 'block') {
+            x.style.display = 'none';
+            y.style.display = 'block';
+        }
+        else {
+            y.style.display = 'none';
+            x.style.display = 'block';
+        }
+    }
+
     const newHousePick = () => {
             const choices = ['rock', 'paper', 'scissor'];
             let choice =choices[Math.floor(Math.random() * 3)]
@@ -59,10 +72,10 @@ export default () => {
             <div className='wrapper'>
                 <Header score={score}/>
                 <div className='select'>
-                    <RPSSelect setMyChoice={setMyChoice} setPlayerWin={setPlayerWin}/>
+                    <RPSSelect Transitioning={Transitioning} setMyChoice={setMyChoice} setPlayerWin={setPlayerWin}/>
                 </div>
                 <div className='result'>
-                    <RPSResult PlayerWin={PlayerWin} myChoice={myChoice} setScore={setScore} house={house}/>
+                    <RPSResult Transitioning={Transitioning} PlayerWin={PlayerWin} myChoice={myChoice} setScore={setScore} house={house}/>
                 </div>
                 <Footer/>
             </div>
