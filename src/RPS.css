@@ -45,13 +45,6 @@ h2 {
     width: 50%;
     margin-left: 25%;
 }
-.LoadWrap {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin-left: 25%;
-    justify-content: space-around;
-}
 .resultsWrap {
     display: flex;
     justify-content: space-around;
@@ -277,5 +270,27 @@ h2 {
     }
     #mobileOnly .pcChoice{
         display: flex;
+    }
+    #topDiv {
+        width:90%;
+        margin-left:5%;
+    }
+    #topDiv div img {
+        margin-top: 18%;
+    }
+    #scoreTracker {
+        padding: 8px;
+        width: 20%;
+    }
+    #playAgainButton {
+        width: 40%;
+    }
+    #rulesButton {
+        margin-top: 10%;
+        width: 30%;
+        margin-left: 35%; 
+    }
+    .selectBkg {
+        background-size: 50%;
     }
 }
