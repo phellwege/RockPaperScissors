@@ -266,4 +266,16 @@ h2 {
     .hand {
         padding: 1.5em;
     }
+    .resultsWrap .playersChoice {
+        display: none;
+    }
+    #mobileOnly .playersChoice{
+        display: flex;
+    }
+    .resultsWrap .pcChoice {
+        display: none;
+    }
+    #mobileOnly .pcChoice{
+        display: flex;
+    }
 }
