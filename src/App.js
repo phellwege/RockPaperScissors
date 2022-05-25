@@ -10,9 +10,7 @@ function App() {
   return (
       <div className="App">
         <React.Fragment>
-          <Router>
-            <Home path="/"/>
-          </Router>
+          <Home/>
       </React.Fragment>
       </div>
   );
