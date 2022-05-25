@@ -8,7 +8,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.Public_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Route exact path='/' component = {App}/>
     <App />
     </BrowserRouter>
