@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 // import { BrowserRouter } from 'react-router-dom/browserRouter';
-import { Router } from '@reach/router';
+import { Link, Route, Routes } from 'react-router-dom';
 import Home from './views/Home';
 import './App.css';
 
@@ -8,11 +8,11 @@ import './App.css';
 function App() {
 
   return (
-      <div className="App">
-        <React.Fragment>
-          <Home/>
-      </React.Fragment>
-      </div>
+    <div className="App">
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+    </Routes>
+  </div>
   );
 }
 
