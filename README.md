@@ -69,5 +69,5 @@ One takeaway from this is that react functions are fully asynchronous and that c
 ## Author
 
 - Website - [Peters-portfolio](http://peters-portfolio.net/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/phellwege)
+- Frontend Mentor - [@phellwege](https://www.frontendmentor.io/profile/phellwege)
 
