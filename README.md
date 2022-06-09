@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/phellwege/RockPaperScissors)
-- Live Site URL: [Live Site](https://phellwege.github.io/RockPaperScissors/)
+- Live Site URL: [Gh-Pages](https://phellwege.github.io/RockPaperScissors/)
 
 ## My process
 
